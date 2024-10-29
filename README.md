@@ -6,3 +6,12 @@
 - Raspagem Web
 
 ---
+
+## Dificuldade Média: 
+
+
+---
+## Dificuldade Difícil: 
+
+
+---
