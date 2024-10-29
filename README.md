@@ -2,7 +2,7 @@
 
 - Dificuldade Fácil:
 
-Pesquisador e Escritor de Conteúdo
-Raspagem Web
+Pesquisador e Escritor de Conteúdo.
+Raspagem Web.
 
 ---
