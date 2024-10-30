@@ -1,19 +1,18 @@
 ﻿# Exemplos de CrewAI 
 
-## Dificuldade Fácil:
+## Overview:
 
 - Pesquisador e Escritor de Conteúdo
 - Raspagem Web
 - Automatizar o planejamento de eventos
 - Colaboração de vários agentes para análise financeira.
-
+  
 ---
+## LLMs Usados
 
-## Dificuldade Média: 
+- llama via groq
+- gemini via google studio
 
+Ambos Free com limites de uso, e limitações consideravéis dependendo do projeto.
+Para projetos comerciais é recomendado utilizar LLMs mais poderosos, Ex: gpt-4o/claude 3.5
 
----
-## Dificuldade Difícil: 
-
-
----
