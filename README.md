@@ -6,6 +6,7 @@
 - Raspagem Web
 - Automatizar o planejamento de eventos
 - Colaboração de vários agentes para análise financeira.
+- Pesquisa de mercado/Plano de négocio
   
 ---
 ## LLMs Usados
