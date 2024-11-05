@@ -7,6 +7,7 @@
 - Automatizar o planejamento de eventos
 - Colaboração de vários agentes para análise financeira.
 - Pesquisa de mercado/Plano de négocio
+- Mentoria CrewAI Prof-Sandeco Roteiro Youtube
   
 ---
 ## LLMs Usados
