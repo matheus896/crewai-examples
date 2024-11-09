@@ -1,0 +1,25 @@
+personalized_activity_planning_task:
+  description: "Pesquisar e encontrar atividades interessantes em {destination}. Focar em atividades e eventos que combinem com os interesses e faixa etária do viajante. Utilizar ferramentas de pesquisa na internet e motores de recomendação para coletar informações."
+  inputs:
+    - origin: "{origin}"
+    - destination: "{destination}"
+    - age: "{age}"
+    - hotel_location: "{hotel_location}"
+    - flight_information: "{flight_information}"
+    - trip_duration: "{trip_duration}"
+  expected_output: "Uma lista de atividades e eventos recomendados para cada dia da viagem, incluindo nome, localização, descrição, razão pela qual são adequados para o viajante, além de avaliações e notas."  
+
+restaurant_scenic_location_scout_task:
+  description: "Encontrar restaurantes bem avaliados e experiências gastronômicas em {destination}. Recomendar locais cênicos e atividades divertidas que se alinhem com as preferências do viajante. Usar ferramentas de pesquisa, sites de avaliações de restaurantes e guias de viagem."
+  inputs:
+    - origin: "{origin}"
+    - destination: "{destination}"
+    - age: "{age}"
+    - hotel_location: "{hotel_location}"
+    - flight_information: "{flight_information}"
+    - trip_duration: "{trip_duration}"
+  expected_output: "Uma lista de restaurantes, locais cênicos e atividades divertidas para cada dia da viagem, incluindo nome, endereço, tipo de culinária ou atividade, descrição e notas." 
+
+itinerary_compilation_task:
+  description: "Compilar todas as informações pesquisadas em um itinerário detalhado dia a dia para a viagem a {destination}. Garantir que o itinerário integre voos, detalhes do hotel, atividades e experiências gastronômicas planejadas."
+  expected_output: "Um documento de itinerário detalhado, incluindo um plano dia a dia com voos, detalhes do hotel, atividades, restaurantes e locais cênicos."
