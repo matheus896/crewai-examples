@@ -1,56 +1,58 @@
 # Edu Crew
 
-Welcome to the Edu Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Bem-vindo ao projeto Edu Crew, desenvolvido pela [crewAI](https://crewai.com). Este template foi projetado para ajudá-lo a configurar um sistema de IA multiagente com facilidade, aproveitando o poderoso e flexível framework fornecido pela crewAI. Nosso objetivo é permitir que seus agentes colaborem de forma eficaz em tarefas complexas, maximizando sua inteligência coletiva e capacidades.
 
-## Installation
+## Instalação
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Certifique-se de ter Python >=3.10 <=3.13 instalado em seu sistema. Este projeto utiliza [UV](https://docs.astral.sh/uv/) para gerenciamento de dependências e manipulação de pacotes, oferecendo uma experiência de configuração e execução sem complicações.
 
-First, if you haven't already, install uv:
+Primeiro, se ainda não tiver feito isso, instale o UV:
 
 ```bash
 pip install uv
 ```
 
-Next, navigate to your project directory and install the dependencies:
+Em seguida, navegue até o diretório do seu projeto e instale as dependências:
 
-(Optional) Lock the dependencies and install them by using the CLI command:
+(Opcional) Trave as dependências e instale-as utilizando o comando da CLI:
+
 ```bash
 crewai install
 ```
 
-### Customizing
+### Personalizando
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Adicione sua `OPENAI_API_KEY` no arquivo `.env`**
 
-- Modify `src/edu_flow/config/agents.yaml` to define your agents
-- Modify `src/edu_flow/config/tasks.yaml` to define your tasks
-- Modify `src/edu_flow/crew.py` to add your own logic, tools and specific args
-- Modify `src/edu_flow/main.py` to add custom inputs for your agents and tasks
+- Modifique `src/edu_flow/config/agents.yaml` para definir seus agentes
+- Modifique `src/edu_flow/config/tasks.yaml` para definir suas tarefas
+- Modifique `src/edu_flow/crew.py` para adicionar sua própria lógica, ferramentas e argumentos específicos
+- Modifique `src/edu_flow/main.py` para adicionar entradas personalizadas para seus agentes e tarefas
 
-## Running the Project
+## Executando o Projeto
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+Para iniciar sua equipe de agentes de IA e começar a execução das tarefas, execute este comando a partir da pasta raiz do seu projeto:
 
 ```bash
 crewai run
 ```
 
-This command initializes the edu-flow Crew, assembling the agents and assigning them tasks as defined in your configuration.
+Este comando inicializa a Crew edu-flow, montando os agentes e atribuindo a eles as tarefas definidas em sua configuração.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+Este exemplo, sem modificações, criará um arquivo `report.md` com o resultado de uma pesquisa sobre LLMs na pasta raiz.
 
-## Understanding Your Crew
+## Entendendo Sua Equipe
 
-The edu-flow Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+A equipe edu-flow é composta por vários agentes de IA, cada um com funções, objetivos e ferramentas únicas. Esses agentes colaboram em uma série de tarefas, definidas em `config/tasks.yaml`, aproveitando suas habilidades coletivas para atingir objetivos complexos. O arquivo `config/agents.yaml` descreve as capacidades e configurações de cada agente em sua equipe.
 
-## Support
+## Suporte
 
-For support, questions, or feedback regarding the Edu Crew or crewAI.
+Para suporte, perguntas ou feedback sobre o Edu Crew ou crewAI:
 
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+- Visite nossa [documentação](https://docs.crewai.com)
+- Entre em contato conosco através do nosso [repositório no GitHub](https://github.com/joaomdmoura/crewai)
+- [Junte-se ao nosso Discord](https://discord.com/invite/X4JWnZnxPb)
+- [Converse com nossa documentação](https://chatg.pt/DWjSBZn)
 
-Let's create wonders together with the power and simplicity of crewAI.
+Vamos criar maravilhas juntos com o poder e a simplicidade da crewAI.
+
