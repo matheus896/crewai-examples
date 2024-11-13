@@ -1,0 +1,34 @@
+writing_task:
+  description: >
+    Criar conteúdo educacional detalhado e abrangente sobre {topic} com base na pesquisa fornecida, seu conhecimento existente e o plano de conteúdo. O conteúdo deve ser direcionado para um público de nível {audience_level}, explicando os conceitos de forma completa e em um nível de complexidade apropriado. Siga a estrutura do plano de conteúdo, garantindo que a escrita seja envolvente, tecnicamente precisa e profunda. A minúcia, a completude e a profundidade são essenciais.
+
+    Seção: {section}
+  expected_output: >
+    Uma seção bem estruturada e abrangente que fará parte de um conteúdo mais extenso, seguindo o plano de conteúdo e ensinando efetivamente {topic} para aprendizes de nível {audience_level}. A minúcia, a completude e a profundidade são essenciais. Use analogias, exemplos e explicações detalhadas para ajudar a explicar o conteúdo quando apropriado.
+
+    Certifique-se de que o conteúdo esteja formatado com títulos e subtítulos claros e use pontos de lista onde for apropriado para melhorar a legibilidade.
+
+    Não é necessário incluir resumos ou conclusões de cada seção, apenas o conteúdo.
+  agent: content_writer
+
+editing_task:
+  description: >
+    Revisar e refinar o conteúdo educacional escrito sobre {topic}. Garantir que ele mantenha altos padrões de qualidade, siga precisamente o plano de conteúdo e comunique efetivamente todos os objetivos de aprendizagem. Preste atenção especial ao nível da linguagem, exemplos e explicações para verificar se são apropriados para aprendizes de nível {audience_level}, preservando a precisão técnica. A minúcia, a completude e a profundidade são essenciais.
+
+    Seção: {section}
+  expected_output: >
+    Uma versão refinada e abrangente do conteúdo educacional com clareza aprimorada, nível de complexidade apropriado e legibilidade aumentada para aprendizes de nível {audience_level}. Certifique-se de que o conteúdo esteja formatado com títulos e subtítulos claros e use pontos de lista onde for apropriado para melhorar a legibilidade.
+
+    Queremos apenas a seção do conteúdo de volta, nada mais. Não inclua o feedback.
+  agent: editor
+
+quality_review_task:
+  description: >
+    Realizar uma avaliação abrangente da qualidade do conteúdo educacional final sobre {topic}. Avaliar com base nas melhores práticas educacionais e verificar o alinhamento com as expectativas do nível {audience_level}. Verificar se todas as seções do plano de conteúdo são abordadas adequadamente, se os conceitos são construídos de forma lógica e se os objetivos de aprendizagem são alcançados efetivamente. A minúcia, a completude e a profundidade são essenciais.
+
+    Seção: {section}
+  expected_output: >
+    Uma versão aprimorada e abrangente da seção de conteúdo que incorpora o feedback. Certifique-se de que o conteúdo esteja formatado com títulos e subtítulos claros e use pontos de lista onde for apropriado para melhorar a legibilidade.
+
+    Inclua referências às fontes utilizadas no resumo criado em @tasks.yaml. Além disso, certifique-se de que as referências estejam incluídas como citações inline ou hyperlinks dentro do conteúdo onde for apropriado. Não inclua o próprio feedback, apenas o conteúdo aprimorado.
+  agent: quality_reviewer

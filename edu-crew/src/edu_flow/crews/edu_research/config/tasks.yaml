@@ -1,0 +1,15 @@
+research_task:
+    description: >
+      Conduzir uma pesquisa aprofundada sobre {topic} com base no nível de público {audience_level}. Certifique-se de encontrar informações interessantes e relevantes considerando que o ano atual é 2024.
+    expected_output: >
+      Um relatório de pesquisa detalhado sobre {topic} com informações relevantes que possam inspirar a criação de conteúdo educacional direcionado ao público de nível {audience_level}. O relatório de pesquisa também deve incluir referências às fontes utilizadas.
+    agent: researcher
+
+
+planning_task:
+    description: >
+      Revisar o conteúdo recebido e criar um plano para um conteúdo educacional incrível e abrangente direcionado ao público de nível {audience_level}. O plano deve ser altamente detalhado e abrangente.
+    expected_output: >
+      Um plano detalhado para uma peça de conteúdo educacional direcionada ao público de nível {audience_level}. O plano deve ser composto por uma série de seções, cada seção com um subtítulo, objetivo de alto nível, motivo de sua importância e fontes referenciadas.
+    agent: planner
+
