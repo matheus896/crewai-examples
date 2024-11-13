@@ -23,9 +23,9 @@ LLM_CONFIGS = {
     },
 }
 
-LLM_CONFIG = LLM_CONFIGS["gemini"] # Change this to switch between LLMs
+LLM_CONFIG = LLM_CONFIGS["gemini"] # Altere aqui para alternar entre LLMs
 
 EDU_FLOW_INPUT_VARIABLES = {
-    "audience_level": "introdutório",
-    "topic": "Sistema Multi-agentes com CrewAI"
+    "audience_level": "introdutório", # Nível
+    "topic": "Sistema Multi-agentes com CrewAI" # Escolha seu tópico 
 } 
