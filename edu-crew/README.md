@@ -34,7 +34,7 @@ crewai install
 Para iniciar sua equipe de agentes de IA e começar a execução das tarefas, execute este comando a partir da pasta raiz do seu projeto:
 
 ```bash
-crewai run
+uv run kickoff
 ```
 
 Este comando inicializa a Crew edu-flow, montando os agentes e atribuindo a eles as tarefas definidas em sua configuração.
