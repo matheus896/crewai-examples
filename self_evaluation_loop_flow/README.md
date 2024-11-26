@@ -1,56 +1,45 @@
-# {{crew_name}} Crew
+ # {{loop_flow}} Crew
 
-Welcome to the {{crew_name}} Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Bem-vindo ao projeto {{loop_flow}} Crew, impulsionado por [crewAI](https://crewai.com). Este modelo é projetado para ajudá-lo a configurar um sistema de IA multiagente com facilidade, aproveitando o poderoso e flexível framework fornecido pela crewAI. Nosso objetivo é permitir que seus agentes colaborem efetivamente em tarefas complexas, maximizando sua inteligência e capacidades coletivas.
 
-## Installation
+## Instalação
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Certifique-se de ter o Python >=3.10 <=3.13 instalado no seu sistema. Este projeto usa [UV](https://docs.astral.sh/uv/) para gerenciamento de dependências e manipulação de pacotes, oferecendo uma experiência de configuração e execução sem complicações.
 
-First, if you haven't already, install uv:
+Primeiro, se ainda não o fez, instale o uv:
 
 ```bash
 pip install uv
-```
+Em seguida, navegue até o diretório do seu projeto e instale as dependências:
 
-Next, navigate to your project directory and install the dependencies:
+(Opcional) Bloqueie as dependências e instale-as usando o comando CLI:
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
+
 crewai install
-```
+Personalização
+Adicione sua OPENAI_API_KEY ao arquivo .env
 
-### Customizing
+Modifique src/self_evaluation_loop_flow/config/agents.yaml para definir seus agentes
+Modifique src/self_evaluation_loop_flow/config/tasks.yaml para definir suas tarefas
+Modifique src/self_evaluation_loop_flow/crew.py para adicionar sua própria lógica, ferramentas e argumentos específicos
+Modifique src/self_evaluation_loop_flow/main.py para adicionar entradas personalizadas para seus agentes e tarefas
+Executando o Projeto
+Para iniciar sua equipe de agentes de IA e começar a execução de tarefas, execute isso a partir da pasta raiz do seu projeto:
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
 
-- Modify `src/self_evaluation_loop_flow/config/agents.yaml` to define your agents
-- Modify `src/self_evaluation_loop_flow/config/tasks.yaml` to define your tasks
-- Modify `src/self_evaluation_loop_flow/crew.py` to add your own logic, tools and specific args
-- Modify `src/self_evaluation_loop_flow/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
 crewai run
-```
+Este comando inicializa a Crew self_evaluation_loop_flow, montando os agentes e atribuindo-lhes tarefas conforme definido em sua configuração.
 
-This command initializes the self_evaluation_loop_flow Crew, assembling the agents and assigning them tasks as defined in your configuration.
+Este exemplo, sem modificações, criará um arquivo report.md com a saída de uma pesquisa sobre LLMs na pasta raiz.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+Entendendo Sua Crew
+A Crew self_evaluation_loop_flow é composta por múltiplos agentes de IA, cada um com funções, objetivos e ferramentas únicos. Esses agentes colaboram em uma série de tarefas definidas em config/tasks.yaml, utilizando suas habilidades coletivas para alcançar objetivos complexos. O arquivo config/agents.yaml descreve as capacidades e configurações de cada agente em sua equipe.
 
-## Understanding Your Crew
+Suporte
+Para suporte, perguntas ou feedback sobre a {{loop_flow}} Crew ou crewAI.
 
-The self_evaluation_loop_flow Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the {{crew_name}} Crew or crewAI.
-
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+Visite nossa documentação
+Entre em contato conosco através do nosso repositório GitHub
+Junte-se ao nosso Discord
+Converse com nossos docs
+Vamos criar maravilhas juntos com o poder e a simplicidade da crewAI.
