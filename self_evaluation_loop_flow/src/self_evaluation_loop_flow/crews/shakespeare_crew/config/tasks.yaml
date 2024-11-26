@@ -1,0 +1,12 @@
+write_x_post:
+  description: >
+    Dado o tópico '{topic}', compor um comentário humorístico no estilo de Shakespeare.
+    O tom deve ser sarcástico e brincalhão. O post final em formato curto para mídia social
+    deve ter mais de 200 caracteres e não exceder 280 caracteres, e emojis são estritamente proibidos.
+
+    Por favor, incorpore o seguinte feedback, se presente:
+    {feedback}
+  expected_output: >
+    Um comentário espirituoso e shakespeareano entre 200 e 280 caracteres [Inclusive].
+  agent: shakespearean_bard
+
