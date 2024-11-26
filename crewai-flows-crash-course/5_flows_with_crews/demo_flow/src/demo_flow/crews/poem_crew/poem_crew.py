@@ -1,0 +1,40 @@
+from crewai import Agent, Crew, Process, Task, LLM
+from crewai.project import CrewBase, agent, crew, task
+from dotenv import load_dotenv
+
+load_dotenv()
+
+llm = LLM (
+    model = 'gemini/gemini-1.5-flash',
+    temperature=0.2
+    )
+
+@CrewBase
+class PoemCrew:
+    """Poem Crew"""
+
+    agents_config = "config/agents.yaml"
+    tasks_config = "config/tasks.yaml"
+
+    @agent
+    def poem_writer(self) -> Agent:
+        return Agent(
+            config=self.agents_config["poem_writer"],
+            llm = llm
+        )
+
+    @task
+    def write_poem(self) -> Task:
+        return Task(
+            config=self.tasks_config["write_poem"],
+        )
+
+    @crew
+    def crew(self) -> Crew:
+        """Creates the Research Crew"""
+        return Crew(
+            agents=self.agents,  # Automatically created by the @agent decorator
+            tasks=self.tasks,  # Automatically created by the @task decorator
+            process=Process.sequential,
+            verbose=True,
+        )

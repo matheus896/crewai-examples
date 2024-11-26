@@ -1,0 +1,27 @@
+research_topic:
+  description: >
+    Pesquise o tema fornecido de {topic} para reunir as informações mais importantes que serão úteis na criação de um esboço de livro. 
+    Certifique-se de focar em fontes de alta qualidade e confiáveis.
+    Aqui está alguma informação adicional sobre o objetivo desejado pelo autor para o livro:\n\n {goal}
+  expected_output: >
+    Um conjunto de pontos-chave e informações importantes sobre {topic} que serão usados para criar o esboço.
+  agent: researcher
+
+generate_outline:
+  description: >
+
+    Estrutura sugerida para cada capítulo:
+    - Introdução ao tema
+    - Desenvolvimento (2-3 subtópicos principais)
+    - Casos de uso ou exemplos práticos
+    - Conclusão e ponte para o próximo capítulo
+
+    Certifique-se de que cada capítulo tenha um título e uma breve descrição que destaque os tópicos e subtópicos a serem abordados.
+    É importante notar que cada capítulo terá no máximo 3.000 palavras.
+    Além disso, certifique-se de não duplicar nenhum capítulo ou tópico no esboço.
+
+    Aqui está alguma informação adicional sobre o objetivo desejado pelo autor para o livro:\n\n {goal}
+
+  expected_output: >
+    Um esboço de capítulos, com títulos e descrições do que cada capítulo conterá.
+  agent: outliner

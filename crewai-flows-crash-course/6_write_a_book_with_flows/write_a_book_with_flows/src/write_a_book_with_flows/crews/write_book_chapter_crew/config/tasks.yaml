@@ -1,0 +1,54 @@
+research_chapter:
+  description: >
+    Pesquise o tema, título e esboço do capítulo fornecidos para reunir conteúdo adicional que será útil na escrita do capítulo.
+    Todo o conteúdo deve ser apresentado em português do Brasil.
+
+    Critérios de qualidade:
+    - Priorize fontes acadêmicas e relatórios técnicos recentes
+    - Traduza adequadamente termos técnicos para o português
+    - Adapte exemplos e casos de uso para o contexto brasileiro quando possível
+    - Inclua estatísticas e dados quantitativos quando disponíveis
+    - Verifique a credibilidade das fontes
+
+    Aqui está alguma informação adicional sobre o objetivo desejado pelo autor para o livro e o capítulo:\n\n {goal}
+    Aqui está a descrição do esboço para o capítulo:\n\n {chapter_description}
+
+    Ao pesquisar, considere os seguintes pontos-chave:
+    - Você precisa reunir informações suficientes para escrever um capítulo de 3.000 palavras em português
+    - O capítulo que você está pesquisando precisa se encaixar bem com os outros capítulos do livro
+    - Mantenha a consistência na tradução de termos técnicos
+
+    Aqui está o esboço de todo o livro:\n\n
+    {book_outline}
+  expected_output: >
+    Um conjunto de insights e informações adicionais em português que podem ser usados na escrita do capítulo.
+  agent: researcher
+
+write_chapter:
+  description: >
+    Escreva um capítulo bem estruturado em português do Brasil com base no título, objetivo e descrição do esboço do capítulo.
+    Cada capítulo deve ser escrito em markdown e conter cerca de 3.000 palavras.
+
+    Aqui está o tema do livro: {topic}
+    Aqui está o título do capítulo: {chapter_title}
+    Aqui está a descrição do esboço para o capítulo:\n\n {chapter_description}
+
+    Notas importantes:
+    - O texto deve seguir o português brasileiro formal
+    - Use a terminologia técnica adequada em português
+    - O capítulo deve seguir a estrutura markdown correta com títulos (##), subtítulos (###) e formatação adequada
+    - Use listas e citações quando apropriado
+    - Inclua uma breve introdução e conclusão em cada capítulo
+    - Mantenha consistência com os outros capítulos do livro
+
+    Estrutura sugerida:
+    - Introdução ao tema
+    - Desenvolvimento (2-3 subtópicos principais)
+    - Casos de uso ou exemplos práticos (preferencialmente do contexto brasileiro)
+    - Conclusão e ponte para o próximo capítulo
+
+    Aqui está o esboço de todo o livro:\n\n
+    {book_outline}
+  expected_output: >
+    Um capítulo em português do Brasil em formato markdown de cerca de 3.000 palavras que cobre o título e a descrição do esboço do capítulo fornecidos.
+  agent: writer
