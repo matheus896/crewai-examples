@@ -1,34 +1,53 @@
-# Project Setup
 
-This project requires certain dependencies to be installed for proper functioning. Follow the instructions below to set up your environment.
+```markdown
+# Configuração do Projeto
 
-## Conda Environment
+Este projeto requer a instalação de certas dependências para funcionar corretamente. Siga as instruções abaixo para configurar seu ambiente.
 
-To create a conda environment with Python 3.12, use the following command:
+## Ambiente Conda
 
+Para criar um ambiente conda com Python 3.12, use o seguinte comando:
+
+```bash
 conda create --name crewai-flows python=3.12
+```
 
-To activate the conda environment, use:
+Para ativar o ambiente conda, use:
 
+```bash
 conda activate crewai-flows
+```
 
 ## Virtualenv
 
-If you prefer using virtualenv, first install it:
+Se preferir usar virtualenv, primeiro instale-o:
 
+```bash
 pip install virtualenv
+```
 
-Then create a virtual environment with Python 3.12:
+Em seguida, crie um ambiente virtual com Python 3.12:
 
+```bash
 virtualenv -p python3.12 myenv
+```
 
-Activate the virtualenv environment with:
+Ative o ambiente virtualenv com:
 
-- On Windows: myenv\Scripts\activate
-- On macOS/Linux: source myenv/bin/activate
+- No Windows:
+  ```bash
+  myenv\Scripts\activate
+  ```
+- No macOS/Linux:
+  ```bash
+  source myenv/bin/activate
+  ```
 
-## Installing Dependencies
+## Instalando Dependências
 
-To install the dependencies listed in the `requirements.txt` file, use:
+Para instalar as dependências listadas no arquivo `requirements.txt`, use:
 
+```bash
 pip install -r requirements.txt
+```
+```
