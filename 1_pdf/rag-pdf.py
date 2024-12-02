@@ -106,10 +106,3 @@ customer_question = input(
 )
 result = crew.kickoff(inputs={"customer_question": customer_question})
 print(result)
-
-# venv\Scripts\activate
-# python 2_crew_custom_model_and_embeddings.py
-"""#     config=dict(
-        embedder=dict(llm=dict(provider="google", config=dict(model="gemini-1.5-flash")),
-                      provider="ollama", config=dict(model="nomic-embed-text:latest")),
-),  """
