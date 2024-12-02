@@ -1,4 +1,4 @@
-# Um Sistema de Assistente Automático
+# Rag PDF com CrewAI
 Este script Python utiliza a biblioteca crewai para criar uma estrutura de assistente automático (Crew) que busca e responde perguntas em um PDF. O sistema inclui dois agentes distintos: um agente de pesquisa para extrair dados do PDF e um agente de escrita profissional para escrever emails com base nas informações extraídas.
 
 # Pré-requisitos
@@ -8,14 +8,12 @@ Python: Certifique-se de ter o Python instalado em sua máquina. A versão recom
 
 crewai
 crewai_tools
-PyPDF2 (opcional, para uso com o PDFSearchTool)
 pydotenv
 
 - Para instalar as bibliotecas necessárias, execute:
 
 pip install crewai crewai_tools  
 pip install python-dotenv
-pip install PyPDF2 #opcional
 
 # Como Usar
 
