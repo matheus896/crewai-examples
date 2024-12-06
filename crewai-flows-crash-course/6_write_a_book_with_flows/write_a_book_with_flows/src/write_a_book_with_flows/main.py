@@ -12,7 +12,7 @@ import os
 
 class BookState(BaseModel):
     title: str = (
-        "Prepare-se para 2025: O Ano dos Agentes Que Transformam Tudo"
+        "Prepare-se para 2025 O Ano dos Agentes Que Transformam Tudo"
     )
     book: List[Chapter] = []
     book_outline: List[ChapterOutline] = []
@@ -87,27 +87,26 @@ class BookFlow(Flow[BookState]):
     async def join_and_save_chapter(self):
         print("Joining and Saving Book Chapters")
         # Combine all chapters into a single markdown string
-        book_content = []
+        book_content = ""
 
         for chapter in self.state.book:
-            # Add the chapter title as an H1 heading and content
-            book_content.append(f"# {chapter.title}\n\n{chapter.content}")
+            # Add the chapter title as an H1 heading
+            book_content += f"# {chapter.title}\n\n"
+            # Add the chapter content
+            book_content += f"{chapter.content}\n\n"
 
-        # Criar diretório de saída
-        output_dir = "output"
-        os.makedirs(output_dir, exist_ok=True)
+        # The title of the book from self.state.title
+        book_title = self.state.title
 
-        # Criar nome do arquivo usando o título do livro
-        file_name = f"{self.state.title}.md".replace(" ", "_")
-        output_path = os.path.join(output_dir, file_name)
+        # Create the filename by replacing spaces with underscores and adding .md extension
+        filename = f"./{book_title.replace(' ', '_')}.md"
 
-        # Salvar o conteúdo no arquivo
-        with open(output_path, "w", encoding="utf-8") as file:
-            for section in book_content:
-                file.write(section)
-                file.write("\n\n")
+        # Save the combined content into the file
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write(book_content)
 
-        print(f"Book saved as {output_path}")
+        print(f"Book saved as {filename}")
+        return book_content
 
 
 def kickoff():
@@ -123,5 +122,5 @@ def plot():
 if __name__ == "__main__":
     kickoff()
 
-# cd C:\flow-crewai\crewai-flows-crash-course\6_write_a_book_with_flows\write_a_book_with_flows\src
+# cd C:\caminho do arquivo..
 # uv run kickoff
