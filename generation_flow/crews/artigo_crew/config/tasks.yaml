@@ -1,0 +1,21 @@
+research_task:
+  description: >
+    Realizar uma pesquisa aprofundada sobre {tema}.
+    Identificar as principais tendências, desenvolvimentos recentes,
+    e impactos na sociedade e indústria.
+    O relatório deve incluir dados concretos e exemplos práticos.
+  expected_output: >
+    Um relatório detalhado de 3 parágrafos sobre {tema} em português BR,
+    incluindo dados e exemplos específicos.
+  agent: pesquisador
+
+write_task:
+  description: >
+    Criar um artigo informativo e envolvente sobre {tema},
+    utilizando as informações da pesquisa realizada.
+    O artigo deve ser acessível ao público geral, mantendo
+    um tom profissional e informativo.
+  expected_output: >
+    Um artigo bem estruturado de 4 parágrafos sobre {tema} em português BR,
+    com introdução, desenvolvimento e conclusão claros.
+  agent: escritor
