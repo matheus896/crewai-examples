@@ -2,7 +2,7 @@
 
 Este projeto é um gerador de notícias de IA que utiliza o framework CrewAI para criar posts de blog abrangentes sobre qualquer tópico. Ele usa agentes de IA para pesquisar, analisar e escrever conteúdo.
 
-[![Daily Dose of Data Science Newsletter]](https://github.com/matheus896/crewai-examples/blob/main/ai-news/tela%20ai-news-app.png)]
+https://github.com/matheus896/crewai-examples/blob/main/ai-news/tela%20ai-news-app.png
 
 ## Bibliotecas Necessárias
 
