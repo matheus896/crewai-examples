@@ -1,7 +1,7 @@
 # AI News Generator
 
 Este projeto é um gerador de notícias de IA que utiliza o framework CrewAI para criar posts de blog abrangentes sobre qualquer tópico. Ele usa agentes de IA para pesquisar, analisar e escrever conteúdo.
-![Tela Streamlit]([URL_da_Imagem](https://github.com/matheus896/crewai-examples/blob/main/ai-news/tela%20ai-news-app.png))
+![Tela Streamlit](https://github.com/matheus896/crewai-examples/blob/main/ai-news/tela%20ai-news-app.png)
 https://github.com/matheus896/crewai-examples/blob/main/ai-news/tela%20ai-news-app.png
 
 ## Bibliotecas Necessárias
