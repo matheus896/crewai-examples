@@ -1,0 +1,11 @@
+[project]
+name = "guardrail-crew"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.86.0",
+    "guardrails-ai>=0.1.8",
+    "tools>=0.1.9",
+]
