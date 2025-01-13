@@ -1,0 +1,54 @@
+serper_comparison_task:
+  description: >
+    Realizar uma comparação minuciosa entre {item1} e {item2} usando SerperDevTool para coletar artigos e recursos relevantes:
+    - Primeiro, pesquise por {item1} de forma independente com referência a {goal}.
+    - Em seguida, pesquise por {item2} de forma independente com referência a {goal}.
+    - Finalmente, pesquise por comparações entre {item1} e {item2} com referência a {goal}.
+    - Este relatório deve ser um arquivo markdown fácil de ler e entender.
+    - Este relatório deve ter um título dizendo "Relatório de Pesquisa do Serper"
+  expected_output: >
+    Um resumo agregado das descobertas das pesquisas na web, incluindo artigos e recursos principais para cada item e sua comparação, com URLs listadas ao lado de cada descoberta.
+  async_execution: true
+  agent: researcher
+
+tavily_comparison_task:
+  description: >
+    Raspar e resumir dados textuais de grandes fontes de conteúdo usando TavilySearchTool:
+    - Primeiro, colete dados para {item1} com referência a {goal}.
+    - Em seguida, colete dados para {item2} com referência a {goal}.
+    - Finalmente, colete dados comparando {item1} e {item2} com referência a {goal}.
+    - Este relatório deve ser um arquivo markdown fácil de ler e entender.
+    - Este relatório deve ter um título dizendo "Relatório de Pesquisa do Tavily"
+  expected_output: >
+    Um resumo agregado das descobertas das fontes de conteúdo, incluindo pontos de dados principais para cada item e sua comparação, com URLs listadas ao lado de cada descoberta.
+  async_execution: true
+  agent: researcher
+
+reddit_search_comparison_task:
+  description: >
+    Explorar o Reddit para discussões e insights relacionados a ambos os itens usando RedditTavilySearchTool:
+    - Primeiro, explore discussões sobre {item1} com referência a {goal}.
+    - Em seguida, explore discussões sobre {item2} com referência a {goal}.
+    - Finalmente, explore discussões comparando {item1} e {item2} com referência a {goal}.
+    - Este relatório deve ser um arquivo markdown fácil de ler e entender.
+    - Este relatório deve ter um título dizendo "Relatório de Pesquisa do Reddit"
+  expected_output: >
+    Um resumo agregado das discussões do Reddit, incluindo insights principais para cada item e sua comparação, com URLs listadas ao lado de cada descoberta.
+  async_execution: true
+  agent: researcher
+
+final_comparison_report_task:
+  description: >
+    Compilar todas as informações de pesquisa das tarefas de comparação do Serper, Tavily Search e Reddit Search
+    para gerar um relatório de comparação abrangente.
+    Este relatório abrangente deve ser um arquivo markdown fácil de ler e entender.
+    Este relatório deve incluir um resumo da pesquisa de cada ferramenta,
+    uma recomendação final sobre qual item é melhor com base no objetivo especificado,
+    e links/referências para todas as fontes usadas.
+  expected_output: >
+    Um relatório de comparação detalhado em formato markdown, incluindo seções para as descobertas de cada ferramenta, uma recomendação final com base no objetivo e links/referências para todas as fontes para exploração adicional.
+  agent: reporting_analyst
+  context:
+    - serper_comparison_task
+    - tavily_comparison_task
+    - reddit_search_comparison_task

@@ -1,0 +1,25 @@
+research_task:
+  description: >
+    Realizar uma pesquisa minuciosa sobre {topic}. Siga estas etapas:
+    1. Comece usando a ferramenta Serper para realizar uma busca abrangente na web e coletar
+       artigos e recursos relevantes sobre {topic}.
+    2. Use a ferramenta Tavily para raspar e resumir dados textuais de grandes fontes de conteúdo.
+    3. Utilize a ferramenta Firecrawl para realizar uma rastreamento profundo em sites específicos para descobrir
+       insights ocultos ou detalhados.
+    4. Explore o YouTube usando a ferramenta YouTube para identificar e extrair conteúdo de vídeo relevante
+       relacionado a {topic}.
+    Certifique-se de organizar todas as descobertas em um formato estruturado para fácil compreensão.
+  expected_output: >
+    Uma lista de 10 pontos principais resumindo as informações mais importantes sobre {topic},
+    incluindo insights de buscas na web, resumos de texto, rastreamento profundo e análise de vídeo.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Revisar o contexto e as descobertas fornecidas pela tarefa de pesquisa. Expandir cada
+    ponto-chave em uma seção completa para um relatório. O relatório deve ser estruturado,
+    detalhado e apresentar todas as informações relevantes de forma clara.
+  expected_output: >
+    Um relatório completo em markdown contendo seções detalhadas para cada tópico principal.
+  agent: reporting_analyst
+
